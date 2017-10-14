@@ -1,0 +1,206 @@
+* { margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body {
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+div.upload-block {
+	width:100%;
+}
+
+div.description-upload {
+	width:350px;
+	margin: 0px 0 0 30px;
+	position:relative;
+	float:left;
+}
+
+div.errors {
+	margin:20px 0 0 0;
+}
+
+div.errors ul li{
+	list-style-type:none;
+	color:#FF0000;
+}
+
+div.upload-continer {
+	position:relative;
+	float:left;
+	width:430px;
+	margin:10px 0 10px 0px;
+	border: 4px solid #fff;
+	background-color:#fff;
+}
+
+div.upload-continer div.image-list {
+	width:430px;
+	height:330px;
+	border: 4px dashed #3366FF;
+	background-color:#fff;
+}
+
+div.buttons-line {
+	width:430px;
+	height:50px;
+}
+
+.file-upload {
+    position: relative;
+    overflow: hidden;
+    font-size: 1em;        /* example */
+    height: 2em;           /* example */
+    line-height:2em;       /* the same as height */
+	padding:10px 0 0 0;
+}
+
+.file-upload > button{
+    /*float: right;*/
+	height: 100%;
+    width: 100px;            /* example */
+	background-color:#3366FF;
+	border: 0px solid #fff;
+	color:#fff;
+	margin:0 0 0 40%;
+}
+.file-upload > div{
+    padding-left: 1em      /* example */
+}
+
+.file-upload input[type=file]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(20);
+    letter-spacing: 10em;     /* IE 9 fix */
+    -ms-transform: scale(20); /* IE 9 fix */
+    opacity: 0;
+    cursor: pointer
+}
+
+@media only screen and ( max-width: 500px ){  
+    .file_upload > div{
+        display: none
+    }
+    .file_upload > button{
+        width: 100%
+    }
+}
+
+#wrapper {
+    height:auto !important;
+    min-height:100%;
+    min-width:1000px;
+    width:100%;
+	margin-top:50px;
+}
+
+#leftpanel {
+    width: 300px;
+    float: left;
+    background-color: lightgrey;
+    height: 100%;
+    margin-left: -100%;
+    position: relative;
+}
+
+#actions {
+    padding: 20px;
+    border-bottom: 1px solid #888888;
+}
+
+#console {
+    padding: 10px;
+    background-color: #000000;
+    color: limegreen;
+    height: 500px;
+    overflow: auto;
+    font-family: "Lucida Console", monospace;
+    font-size: 0.8em;
+    margin: 1px;
+}
+
+#console p {
+    margin: 5px 0;
+}
+
+#workfield {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+}
+
+#content {
+    margin-left: 300px;
+    padding: 50px;
+    background-color: #FFFFFF;
+}
+
+#img-container {
+    margin-top: 30px;
+    min-width: 400px;
+    min-height: 300px;
+    border: 4px solid steelblue;
+}
+
+.highlighted {
+    border: 4px solid #3366FF !important;
+}
+
+#list-images {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#list-images li {
+    margin: 10px;
+    width: 82px;
+    text-align: center;
+    /*border: 1px solid #CCCCCC;*/
+    display: inline-block;
+}
+
+#list-images div.progress {
+    width: 80px;
+    border: 1px solid #888888;
+    height: 18px;
+	line-height: 18px;
+	color:#000;
+    text-align: center;
+    background-image: url('../image/pbar.png');
+    background-repeat: no-repeat;
+    background-position: -150px center;
+}
+
+#list-images div.progress-sucess {
+    width: 80px;
+    border: 1px solid #888888;
+    height: 18px;
+	line-height: 18px;
+	color:#000;
+    text-align: center;
+    background-image: url('../image/pbar.png');
+    background-repeat: no-repeat;
+    background-position: -150px center;
+}
+
+div.close-img {
+	width:16px;
+	height:16px;
+	background-image: url('../image/close.png');
+	background-repeat:no-repeat;
+	position:relative;
+	float:right;
+	margin:-88px -5px 0 0;
+	z-index:1000;
+	cursor:pointer;
+}
+
+div.close-img:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

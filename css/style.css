@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+div {
+	
+}
+span.link {
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+input[type=button] {
+	padding:8px 15px 8px 15px;
+	cursor:pointer;
+}
+input[type=button]:active {
+	position:relative;
+	top:1px;
+}
+
+input[type=button].ok-button {
+	background-color:#0033CC;
+	color:#fff;
+	border: 0px solid #0033CC;
+}
+input[type=button].ok-button:hover {
+	background-color:#3300FF;
+}
+
+input[type=button].cancel-button {
+	background-color:#CCCCCC;
+	color:#fff;
+	border: 0px solid #CCCCCC;
+}
+input[type=button].cancel-button:hover {
+	background-color:#999999;
+}
+
+input.upload-domain {
+	
+}
+
+img.ico-image {
+	width:120px;
+	height:80px;
+}
+
+.modal a.close-modal[class*="icon-"] {
+	width:16px;
+	height:16px;
+	background-image:url("../image/close.png");
+	cursor:pointer;
+	top: 15px;
+    right: 15px;
+}
